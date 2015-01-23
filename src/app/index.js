@@ -12,7 +12,13 @@ angular.module('tatetiWeb', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
     $urlRouterProvider.otherwise('/');
   })
 .factory('mySocket', function (socketFactory) {
-  var myIoSocket = io.connect('http://thomas-import.codio.io:8080/');
+    var apiUrl;
+    if (window.__env) {
+        apiUrl = window.__env.API_URL
+    } else {
+        apiUrl = 'http://thomas-import.codio.io:8080/';
+    }
+  var myIoSocket = io.connect(apiUrl);
 
   myIoSocket = socketFactory({
     ioSocket: myIoSocket
