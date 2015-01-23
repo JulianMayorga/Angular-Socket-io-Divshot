@@ -1,7 +1,10 @@
 'use strict';
 
 angular.module('tatetiWeb')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, mySocket) {
+    mySocket.on('socket:send:name', function (response) {
+    $scope.name = response.name;
+  });
     $scope.awesomeThings = [
       {
         'title': 'AngularJS',
