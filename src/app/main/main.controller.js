@@ -3,7 +3,7 @@
 angular.module('Angular-Socket-io-Divshot')
   .controller('MainCtrl', function ($scope, mySocket) {
     mySocket.on('socket:send:name', function (response) {
-    $scope.name = response.name;
+        $scope.name = response.name;
   });
     $scope.awesomeThings = [
       {

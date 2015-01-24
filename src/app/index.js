@@ -19,7 +19,6 @@ angular.module('Angular-Socket-io-Divshot', ['ngAnimate', 'ngCookies', 'ngTouch'
         apiUrl = 'http://thomas-import.codio.io:8080/';
     }
   var myIoSocket = io.connect(apiUrl);
-
   myIoSocket = socketFactory({
     ioSocket: myIoSocket
   });

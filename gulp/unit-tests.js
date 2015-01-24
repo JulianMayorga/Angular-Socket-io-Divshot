@@ -20,7 +20,7 @@ function runTests (singleRun, done) {
     paths.src + '/{app,components}/**/*.js'
   ]);
 
-    testFiles.push('mocks/socket.io.js');
+    testFiles.push('mocks/angular-socket-mock.js');
 
   gulp.src(testFiles)
     .pipe($.karma({
