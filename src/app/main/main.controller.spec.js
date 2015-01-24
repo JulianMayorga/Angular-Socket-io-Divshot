@@ -3,7 +3,7 @@
 describe('controllers', function(){
   var scope;
 
-  beforeEach(module('tatetiWeb'));
+  beforeEach(module('Angular-Socket-io-Divshot'));
 
   beforeEach(inject(function($rootScope) {
     scope = $rootScope.$new();
