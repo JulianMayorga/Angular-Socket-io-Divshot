@@ -9,7 +9,9 @@ Frontend development boilerplate.
 ## Instalation
 
 `npm install -g divshot-cli`
+
 `npm install -g bower`
+
 `npm install && bower install`
 
 ## Development
