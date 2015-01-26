@@ -9,7 +9,8 @@ describe('controllers', function() {
     it('should define more than 5 awesome things', inject(function($controller) {
         expect(scope.awesomeThings).toBeUndefined();
         $controller('MainCtrl', {
-            $scope: scope
+            $scope: scope,
+            mySocket: socketMock
         });
         expect(angular.isArray(scope.awesomeThings)).toBeTruthy();
         expect(scope.awesomeThings.length > 5).toBeTruthy();
