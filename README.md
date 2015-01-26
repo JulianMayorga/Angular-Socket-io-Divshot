@@ -18,6 +18,6 @@ Frontend development boilerplate.
 
 `gulp serve`
 
-## Puesta en producción, ambiente development
+## Deployment
 
 `gulp build && divshot push`
