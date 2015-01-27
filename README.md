@@ -1,10 +1,4 @@
-# Angular-Socket-io-Divshot
-
-Frontend development boilerplate based on gulp-angular yeoman generator.
-
-* Framework: AngularJS
-* Transport layer: Socket.io
-* Hosting: Divshot
+# Connect Four Frontend
 
 ## Getting started
 
