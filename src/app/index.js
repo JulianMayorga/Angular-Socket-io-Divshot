@@ -14,7 +14,7 @@ angular.module('Angular-Socket-io-Divshot', ['ngAnimate', 'ngCookies', 'ngTouch'
 .factory('mySocket', function (socketFactory) {
     var apiUrl;
     if (window.__env) {
-        apiUrl = window.__env.API_URL
+        apiUrl = window.__env.API_URL;
     } else {
         apiUrl = 'http://thomas-import.codio.io:8080/';
     }

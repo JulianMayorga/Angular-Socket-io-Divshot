@@ -21,6 +21,7 @@ function runTests (singleRun, done) {
   ]);
 
     testFiles.push('mocks/angular-socket-mock.js');
+    testFiles.push('bower_components/ramda/dist/ramda.js');
 
   gulp.src(testFiles)
     .pipe($.karma({
